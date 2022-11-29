@@ -135,7 +135,7 @@ main h1 {
     flex: 2;
 }
 
-#footer_h2  {
+.footer_h2  {
     text-transform: uppercase;
     font-size: 1.2rem;
     margin: 20px 0px;
