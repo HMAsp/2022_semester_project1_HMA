@@ -99,8 +99,10 @@ main h1 {
     margin-bottom: 20px;
 }
 
-.buttons_home a:hover   {
-    border-color: #FF005C;
+.buttons_home img:hover   {
+    border-radius: 20px;
+    border: 2px inset #FF005C;
+    box-shadow: #131313;
 }
 
 

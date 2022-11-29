@@ -13,3 +13,9 @@ visit us: #FF005C - pink
 # Fonts:
 Alegreya (large headers and titles)
 Nunito (paragraphs and smaller headers)
+
+# Github:
+https://github.com/HMAsp/2022_semester_project1_HMA
+
+# Netlify:
+https://2022aug-sp1-hma.netlify.app/
