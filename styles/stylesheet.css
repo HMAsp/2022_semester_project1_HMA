@@ -1,0 +1,142 @@
+
+body    {
+    font-family: 'nunito', 'open sans', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+:root   {
+    --red: #8C2029;
+    --blue: #2E3C8C;
+    --black: #131313;
+    --green: #CCFF00;
+    --cyan: #00F0FF;
+    --orange: #FF8A00;
+    --pink: #FF005C;
+    --reg: 400;
+    --bold: 700;
+}
+
+/* HEADER - NAV */
+
+.navigation {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: var(--black);
+    opacity: 80%;
+}
+
+.navigation_logo    {
+    max-width: 54px;
+    max-height: 40px;
+    margin: auto 20px;
+}
+
+.navigation_links   {
+    font-family: "alegreya";
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.navigation_links a  {
+    font-weight: var(--reg);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    
+}
+
+.header_main_img    {
+    width: 100%;
+    }
+
+#explore_link   {
+    color: var(--green);
+}
+
+#exhibition_link    {
+    color: var(--cyan);
+}
+
+#getinvolved_link   {
+    color: var(--orange);
+}
+
+#visitus_link   {
+    color: var(--pink);
+}
+
+#contact_link   {
+    color: white;
+}
+
+/* MAIN */
+main h1 {
+    font-family: "alegreya";
+    text-align: center;
+    color: var(--red);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.wrapper_home   {
+    display: flex;
+    margin: 0px auto;
+    max-width: 1200px;
+    padding: 0px 50px;
+}
+
+.buttons_home, 
+.buttons_home a img   {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.buttons_home a:hover   {
+    border-color: #FF005C;
+}
+
+
+.paragraph_home {
+    font-family: "nunito";
+    text-size-adjust: 1rem;
+    margin-top: 0;
+}
+
+/* FOOTER */
+
+.footer_main    {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    padding: 0px 50px;
+    margin: auto;
+    background-color: var(--black);
+    color: white;
+    gap: 50px;
+}
+
+.opening_footer {
+    flex: 1;
+}
+
+.timetable_footer   {
+    margin-top: 5px;
+}
+
+.access_footer  {
+    flex: 2;
+}
+
+#footer_h2  {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
