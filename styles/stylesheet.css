@@ -4,6 +4,16 @@ body    {
     margin: 0;
     padding: 0;
     height: 100vh;
+    max-width: 1440px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3{
+    font-family: "alegreya";
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 :root   {
@@ -18,12 +28,19 @@ body    {
     --bold: 700;
 }
 
+
 /* HEADER - NAV */
+
+header  {
+    margin-bottom: -6px;
+    
+}
 
 .navigation {
     display: flex;
     position: fixed;
     width: 100%;
+    max-width: 1440px;
     background-color: var(--black);
     opacity: 80%;
 }
@@ -32,6 +49,7 @@ body    {
     max-width: 54px;
     max-height: 40px;
     margin: auto 20px;
+    margin-top: 5px;
 }
 
 .navigation_links   {
@@ -78,6 +96,7 @@ body    {
 }
 
 /* MAIN */
+
 main h1 {
     font-family: "alegreya";
     text-align: center;
@@ -86,11 +105,30 @@ main h1 {
     font-weight: bold;
 }
 
-.wrapper_home   {
+.wrapper_home,
+.buttons_home a   {
+    position: relative;
     display: flex;
-    margin: 0px auto;
+    margin: auto;
     max-width: 1200px;
     padding: 0px 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+.wrapper    {
+    display: flex;
+    gap: 20px;
+}
+
+.wrap_left img  {
+   max-width: 655px;
+   max-height: auto;
+}
+
+.wrap_right {
+    flex-grow: 1;
+    min-width: 785px;
 }
 
 .buttons_home, 
@@ -99,10 +137,15 @@ main h1 {
     margin-bottom: 20px;
 }
 
+.buttons_home img   {
+    box-shadow: 3px 3px 8px black;
+    border-radius: 15px;
+}
+
 .buttons_home img:hover   {
-    border-radius: 20px;
-    border: 2px inset #FF005C;
-    box-shadow: #131313;
+    border-radius: 10px;
+    margin-right: -1px;
+    box-shadow: 3px 3px 8px var(--orange);
 }
 
 
@@ -123,6 +166,7 @@ main h1 {
     background-color: var(--black);
     color: white;
     gap: 50px;
+    
 }
 
 .opening_footer {
