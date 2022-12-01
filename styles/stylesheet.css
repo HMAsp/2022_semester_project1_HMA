@@ -3,7 +3,6 @@ body    {
     font-family: 'nunito', 'open sans', Courier, monospace;
     margin: 0;
     padding: 0;
-    height: 100vh;
     max-width: 1440px;
     margin: auto;
 }
@@ -32,7 +31,7 @@ h3{
 /* HEADER - NAV */
 
 header  {
-    margin-bottom: -6px;
+    margin-bottom: -7px;
     
 }
 
@@ -119,17 +118,21 @@ main h1 {
 .wrapper    {
     display: flex;
     gap: 20px;
+    margin-bottom: -7px;
 }
 
-.wrap_left img  {
-   max-width: 655px;
-   max-height: auto;
+.wrap_h3  {
+    font-size: 2rem;
+    color: var(--red);
+    text-align: center;
 }
 
-.wrap_right {
-    flex-grow: 1;
-    min-width: 785px;
+.wrap_h3_blue   {
+    font-size: 2rem;
+    color: var(--blue);
+    text-align: center;
 }
+
 
 .buttons_home, 
 .buttons_home a img   {
