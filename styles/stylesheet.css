@@ -5,6 +5,7 @@ body    {
     padding: 0;
     max-width: 1440px;
     margin: auto;
+    height: 100vh;
 }
 
 h1,
@@ -30,6 +31,12 @@ h3{
 
 /* HEADER - NAV */
 
+#menucheckbox,
+.burgermenu,
+.mobile_nav_header   {
+    display: none;
+}
+
 header  {
     margin-bottom: -7px;
     
@@ -42,6 +49,7 @@ header  {
     max-width: 1440px;
     background-color: var(--black);
     opacity: 80%;
+    z-index: 1;
 }
 
 .navigation_logo    {
@@ -110,7 +118,7 @@ main h1 {
     display: flex;
     margin: auto;
     max-width: 1200px;
-    padding: 0px 50px;
+    /* padding: 0px 50px; */
     justify-content: center;
     align-content: center;
 }
@@ -133,10 +141,14 @@ main h1 {
     text-align: center;
 }
 
+.wrap_text  {
+    margin: 20px;
+}
+
 
 .buttons_home, 
 .buttons_home a img   {
-    margin-right: 20px;
+    
     margin-bottom: 20px;
 }
 
@@ -160,32 +172,130 @@ main h1 {
 
 /* FOOTER */
 
+footer  {
+    /* position: absolute; */
+    margin-top: 50px;
+}
+
 .footer_main    {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.6fr 1fr;
+    grid-template-rows: auto;
     padding: 20px;
-    max-width: 1200px;
-    padding: 0px 50px;
+    max-width: 1440px;
     margin: auto;
     background-color: var(--black);
     color: white;
-    gap: 50px;
-    
+    gap: 10px;
 }
 
 .opening_footer {
-    flex: 1;
+    text-align: right;
+    margin-right: 20px;
 }
 
 .timetable_footer   {
-    margin-top: 5px;
+    margin-top: 10px;
+    text-align: left;
 }
 
-.access_footer  {
-    flex: 2;
+.access_footer h2  {
+    margin-bottom: 58px;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.access_footer_p,
+.access_footer_p p   {
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    grid-column: 3/5;
 }
 
 .footer_h2  {
     text-transform: uppercase;
     font-size: 1.2rem;
     margin: 20px 0px;
+}
+
+#footer_logo    {
+    position: absolute;
+    max-width: 145px;
+    max-height: 99px;
+    margin-top: 150px;
+    align-self: end;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 950px)   {
+    .burgermenu  {
+        display: block;
+        margin: 15px;
+    }
+
+    .mobile_nav_header  {
+        display: block;
+        color: var(--cyan);
+        font-size: 1.4rem;
+        margin: 10px;
+    }
+
+    .navigation {
+        justify-content: space-between;
+        position: unset;
+        opacity: 100;
+    }
+
+    .navigation_links {
+        display: none;
+        margin: auto;
+    }
+
+    #menucheckbox:checked ~ #navmenu  {
+        position: absolute;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        padding-bottom: 10px;
+        gap: 40px;
+        background-color: var(--black);
+        transition: 50ms;
+    } 
+
+    .wrapper_home   {
+        flex-wrap: wrap-reverse;
+    }
+
+    .footer_main    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #footer_logo    {
+        align-self: unset;
+    }
+}
+
+@media  (max-width: 450px)  {
+    .mobile_nav_header {
+        font-size: 1rem;
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+@media  (max-width: 419px)  {
+    #footer_logo    {
+        display: none;
+    }
+
+    .mobile_nav_header {
+        font-size: 0.7rem;
+        margin-top: 15px;
+        text-align: center;
+    }
 }
