@@ -208,7 +208,7 @@ main h1 {
     margin: 25px;
 }
 
-/* CONTACT US */
+/* vVISIT US */
 
 .maphack    {
     display: block;
@@ -238,8 +238,6 @@ main h1 {
     display: none;
     box-shadow: 5px 5px 50px 5px var(--black);
     border-radius: 20px;
-    /* max-height: 31rem;
-    max-width: 31rem; */
     margin: -15rem 22rem;
     position: absolute;
 }
@@ -261,6 +259,57 @@ main h1 {
     0%{opacity: 0%;}
     100%{opacity: 100%;}
 }
+
+/* CONTACT US/FORM */
+
+.form_wrapper   {
+    display: flex;
+    justify-content: right;
+    margin: -10rem 15rem 10rem 10rem;
+}
+
+.form_field {
+    background-color: var(--cyan);
+    font-family: "nunito";
+    font-size: 1.2rem;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+    justify-content: right;
+}
+
+.form_field input   {
+    height: 1.5rem;
+    border-radius: 5px;
+}
+
+.form_field textarea    {
+    border-radius: 5px;
+}
+
+.form_field label   {
+    margin-bottom: -7px;
+}
+
+#news  {
+    height: 20px;
+    width: 20px;
+    margin: 10px 0px;
+}
+
+.form_checkbox    {
+    justify-content: flex-start;
+}
+
+#send   {
+    align-self: flex-end;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+}
+
 
 /* FOOTER */
 
@@ -294,7 +343,6 @@ main h1 {
 
 .access_footer_p,
 .access_footer_p p   {
-    /* margin-top: 10px; */
     margin-bottom: 10px;
     grid-column: 3/5;
 }
