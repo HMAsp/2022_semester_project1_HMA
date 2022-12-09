@@ -118,7 +118,8 @@ main h1 {
     display: flex;
     margin: auto;
     max-width: 1200px;
-    /* padding: 0px 50px; */
+    /* margin: 0px 40px; */
+    margin-bottom: 10px;
     justify-content: center;
     align-content: center;
 }
@@ -145,21 +146,20 @@ main h1 {
     margin: 20px;
 }
 
-
-.buttons_home, 
-.buttons_home a img   {
-    
-    margin-bottom: 20px;
+.buttons_home   {
+    margin-top: -20px;
+    margin-bottom: 30px;
 }
 
 .buttons_home img   {
     box-shadow: 3px 3px 8px black;
     border-radius: 15px;
+    margin-bottom: 20px;
 }
 
 .buttons_home img:hover   {
     border-radius: 10px;
-    margin-right: -1px;
+    margin-left: -10px;
     box-shadow: 3px 3px 8px var(--orange);
 }
 
@@ -167,15 +167,102 @@ main h1 {
 .paragraph_home {
     font-family: "nunito";
     text-size-adjust: 1rem;
-    margin-top: 0;
+    margin: 0px 40px;
+}
+
+/* VISIT US */
+
+.wrapper_visitus    {
+    display: flex;
+    margin-bottom: -6px;
+}
+
+.wrap_small_visitus img {
+    max-height: 456px;
+    max-width: 600px;
+}
+
+.wrap_large_visitus {
+    display: flex;
+}
+
+.timetable_visitus  {
+    margin: 0px 50px;
+}
+
+.access_visitus_p   {
+    flex: 1;
+}
+
+.footer_main_visitus    {
+    background-color: var(--black);
+    height: 150px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.footer_main_visitus img    {
+    /* position: absolute; */
+    margin: 25px;
+}
+
+/* CONTACT US */
+
+.maphack    {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#mapdrop    {
+    display: none;
+}
+
+#mapdrop_link   {
+    margin: 20px auto;
+    background-color: var(--cyan);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "nunito";
+    font-size: 1.2rem;
+    
+}
+
+#mapdrop_link:hover {
+    background-color: var(--orange);
+}
+
+#mapmap {
+    display: none;
+    box-shadow: 5px 5px 50px 5px var(--black);
+    border-radius: 20px;
+    /* max-height: 31rem;
+    max-width: 31rem; */
+    margin: -15rem 22rem;
+    position: absolute;
+}
+
+#maplink    {
+    margin-left: 20px;
+}
+
+#mapdrop:checked ~ img  {
+    display: inline-block;
+    margin: -20rem auto auto 10rem;
+    height: 30rem;
+    width: 30rem;
+    animation: fade;
+    animation-duration: 500ms;
+}   
+
+@keyframes fade {
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
 }
 
 /* FOOTER */
-
-footer  {
-    /* position: absolute; */
-    margin-top: 50px;
-}
 
 .footer_main    {
     display: grid;
