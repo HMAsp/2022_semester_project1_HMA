@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Nunito:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/stylesheet.css">
-    <title>Community Science Museum|EXPLORE</title>
+    <title>CSM | CONTACT</title>
 </head>
 <body>
     <header>
@@ -25,10 +25,10 @@
                 <a id="exhibition_link" href="exhibition.html">exhibitions</a>
                 <a id="getinvolved_link" href="getinvolved.html">get involved</a>
                 <a id="visitus_link" href="visitus.html">visit us</a>
-                <a id="contact_link" href="contact.html">contact</a>
+                <a class="active" id="contact_link" href="contact.html">contact</a>
             </div>
         </nav>
-        <img class="header_main_img" src="images/header_banner_dt_contact.jpg" alt="frontpage pictureanatomy skull with hat split in to a color mash picture side by side">
+        <img class="header_main_img" src="images/header_banner_dt_contact.jpg" alt="anatomy skull and color wall side by side">
     </header>
     <main>
         <section class="wrapper">
@@ -46,16 +46,16 @@
                <fieldset class="form_field">
                 <form class="form_field" action="#">
                     <label for="name">Full Name</label>
-                   <input type="text" id="name" required>
-                   <label for="email">E-mail Address</label>
-                   <input type="email" id="email">
+                   <input type="text" id="name" placeholder="enter full name" required>
+                   <label for="email">Email Address</label>
+                   <input type="email" id="email" placeholder="enter email address">
                    <label for="subject">Subject</label>
-                   <input type="text" id="subject">
+                   <input type="text" id="subject" placeholder="enter message subject">
                    <label for="message">Message</label>
-                   <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                   <textarea name="message" id="message" placeholder="enter your message" cols="30" rows="10"></textarea>
                    <div class="form_checkbox">
                        <input type="checkbox" name="news" id="news">
-                       <label for="news">Recieve museum news</label>
+                       <label for="news">Recieve news</label>
                    </div>
                    <input type="submit" id="send" value="Send">
                 </form>
