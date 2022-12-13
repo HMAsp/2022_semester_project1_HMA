@@ -143,9 +143,15 @@ main h1 {
 }
 
 .wrapper    {
-    display: flex;
-    gap: 20px;
-    margin-bottom: -7px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.wrap_small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .wrap_h3  {
@@ -197,12 +203,14 @@ main h1 {
 }
 
 .wrap_small_visitus img {
-    max-height: 456px;
-    max-width: 600px;
+    width: 100%;
+    max-height: 800px;
+    object-fit: cover;
 }
 
 .wrap_large_visitus {
     display: flex;
+    margin-right: 20px;
 }
 
 .timetable_visitus  {
@@ -223,7 +231,6 @@ main h1 {
 }
 
 .footer_main_visitus img    {
-    /* position: absolute; */
     margin: 25px;
 }
 
@@ -384,8 +391,6 @@ main h1 {
     position: absolute;
     max-width: 145px;
     max-height: 99px;
-    margin-top: 150px;
-    align-self: end;
 }
 
 
