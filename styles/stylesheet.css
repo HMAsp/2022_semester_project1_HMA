@@ -293,21 +293,20 @@ main h1 {
 /* CONTACT US/FORM */
 
 .form_wrapper   {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    max-width: 470px;
+    margin: 20px auto 20px auto;
 }
 
 .form_field {
     background-color: var(--cyan);
     font-family: "nunito";
-    font-size: 1.2rem;
-    width: 256px;
+    font-size: 1.3rem;
+    max-width: 470px;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    border-radius: 10px;
-    justify-content: right;
+    border-radius: 5px;
+    
 }
 
 .form_field input::placeholder,
