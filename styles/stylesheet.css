@@ -24,8 +24,6 @@ h3{
     --cyan: #00F0FF;
     --orange: #FF8A00;
     --pink: #FF005C;
-    --reg: 400;
-    --bold: 700;
 }
 
 
@@ -232,8 +230,11 @@ main h1 {
     background-color: var(--black);
     max-width: 1440px;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     margin: 0;
+    padding-right: 20px;
+    color: white;
+    text-align: center;
 }
 
 .footer_main_visitus img    {
@@ -293,11 +294,6 @@ main h1 {
 
 /* CONTACT US/FORM */
 
-.form_wrapper   {
-    max-width: 470px;
-    margin: 20px auto 20px auto;
-}
-
 .form_field {
     background-color: var(--cyan);
     font-family: "nunito";
@@ -307,7 +303,11 @@ main h1 {
     flex-direction: column;
     gap: 5px;
     border-radius: 5px;
-    
+}
+
+.wrapper fieldset {
+    box-shadow: 1px 1px 5px;
+    margin-bottom: 10px;
 }
 
 .form_field input::placeholder,
@@ -357,7 +357,7 @@ main h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 0.6fr 1fr;
     grid-template-rows: auto;
-    padding: 20px;
+    padding: 20px 20px 0px;
     max-width: 1440px;
     margin: auto;
     background-color: var(--black);
@@ -373,6 +373,13 @@ main h1 {
 .timetable_footer   {
     margin-top: 10px;
     text-align: left;
+}
+
+.address_footer {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    text-align: left;
+
 }
 
 .access_footer h2  {
@@ -396,6 +403,15 @@ main h1 {
 #footer_logo    {
     max-width: 100px;
     max-height: 68px;
+}
+
+.copyright  {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    justify-self: end;
+    align-self: flex-end;
+    font-size: 0.7rem;
+    color: white;
 }
 
 
