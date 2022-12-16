@@ -3,7 +3,7 @@ body    {
     font-family: 'nunito', 'open sans', Courier, monospace;
     margin: 0;
     padding: 0;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: auto;
     height: 100vh;
 }
@@ -37,14 +37,13 @@ h3{
 
 header  {
     margin-bottom: -7px;
-    
 }
 
 .navigation {
     display: flex;
     position: fixed;
     width: 100%;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     background-color: var(--black);
     opacity: 80%;
     z-index: 1;
@@ -53,7 +52,6 @@ header  {
 .navigation input   {
     position: fixed;
     background-color: var(--black);
-    /* padding: 10px 8px; */
     z-index: 1;
 }
 
@@ -358,7 +356,7 @@ main h1 {
     grid-template-columns: 1fr 1fr 0.6fr 1fr;
     grid-template-rows: auto;
     padding: 20px 20px 0px;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: auto;
     background-color: var(--black);
     color: white;
