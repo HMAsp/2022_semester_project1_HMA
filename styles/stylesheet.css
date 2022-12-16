@@ -307,9 +307,11 @@ main h1 {
 }
 
 .form_field input::placeholder,
-.form_field textarea::placeholder    {
+.form_field textarea::placeholder,
+.form_field select::placeholder    {
     font-family: "nunito";
     text-indent: 10px;
+    color: #131313;
 }
 
 .form_field input   {
@@ -326,6 +328,17 @@ main h1 {
 
 .form_field label   {
     margin-bottom: -7px;
+}
+
+.form_field select  {
+    height: 2rem;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-indent: 8px;
+} 
+
+#selector {
+    font-family: "nunito";
 }
 
 #news  {
